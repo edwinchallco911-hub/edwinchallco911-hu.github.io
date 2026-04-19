@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Edwin Challco</title>
+
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="Miniproyecto.css">
+</head>
+
+<body>
+
+    <div class="contenedor1">
+
+        <!-- CABECERA -->
+        <header>
+            <h1>Edwin Rivaldo Challco Callañaupa</h1>
+            <p>Estudiante de Ingeniería de Sistemas</p>
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="curso.html">Curso</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="contenido-central">
+
+            <section>
+                <h2>Bienvenido a mi sitio web</h2>
+
+                <article>
+                    <h3>Sobre mí</h3>
+                    <p>
+                        Mi nombre es Edwin Rivaldo Challco Callañaupa, soy de Cusco, del distrito de Chinchero.
+                        Actualmente estudio Ingeniería de Sistemas y me interesa el desarrollo web.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Mi experiencia</h3>
+                    <p>
+                        He desarrollado páginas web utilizando HTML5 y CSS3, aplicando estructuras modernas
+                        y buenas prácticas de diseño.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Sobre el curso</h3>
+                    <p>
+                        En el curso de Programación Web estamos aprendiendo HTML, CSS, enlaces,
+                        formularios y diseño de páginas web responsivas.
+                    </p>
+                </article>
+
+                <!-- ENLACES INTERNOS (RELATIVOS) -->
+                <article>
+                    <h3>Explora más</h3>
+                    <ul>
+                        <li><a href="biografia.html">Ver mi biografía</a></li>
+                        <li><a href="galeria.html">Ver mi galería de fotos</a></li>
+                        <li><a href="descargas.html">Descargar materiales</a></li>
+                    </ul>
+                </article>
+
+                <!-- ENLACES EXTERNOS (ABSOLUTOS) -->
+                <article>
+                    <h3>Recursos externos</h3>
+                    <p>Aprende más en:</p>
+                    <ul>
+                        <li>
+                            <a href="https://developer.mozilla.org/es/" target="_blank">
+                                Documentación HTML y CSS (MDN)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/" target="_blank">
+                                Tutoriales Web (W3Schools)
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <!-- BARRA LATERAL -->
+            <aside>
+
+                <h3>Información adicional</h3>
+
+                <!-- BUSCADOR -->
+                <div class="buscador">
+                    <h4>Buscador</h4>
+                    <input type="text" id="buscar" placeholder="Escribe tu búsqueda...">
+                    <button onclick="buscarTexto()">Buscar</button>
+                </div>
+
+                <!-- IMAGEN -->
+                <div>
+                    <h4>Imagen representativa</h4>
+                    <img src="img/foto1.jpg" alt="Mi foto personal" width="200">
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>Universidad Tecnológica de los Andes</p>
+            <p>Escuela Profesional de Ingeniería de Sistemas</p>
+            <p>&copy; 2026 - Programación Web</p>
+        </footer>
+
+    </div>
+
+    <!-- SCRIPT BUSCADOR -->
+    <script>
+        function buscarTexto() {
+            let texto = document.getElementById("buscar").value;
+            alert("Buscaste: " + texto);
+        }
+    </script>
+
+</body>
+</html>
